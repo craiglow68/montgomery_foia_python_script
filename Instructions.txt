@@ -1,0 +1,70 @@
+==================================================================================
+				                        About
+==================================================================================
+Author: Jacob Craiglow
+Email: jacobcraiglow1@gmail.com
+
+This program is intended for the Montgomery County, MD FOIA spreadsheet recieved
+quarterly. It will automatically open a chrome browser and after a time produce
+a csv file with the schema: 
+
+List, Levy Year, Bill Type, Bill No., Company Name, Balance, Interest, Total, Is List eq to Total, Property Address,
+Mortgage Line 1, Property Description, Mortgage Line 2, Mortgage Line 3
+
+==================================================================================				
+				                     Instructions
+==================================================================================
+
+Hello! 
+
+To use this program, first double-click main.exe.
+
+A window will open that asks you to choose the csv file.
+   -The file must be a .csv
+   -The file must have the schema: "Bill No., Balance"
+   	-Note: the columns do not need to have theses names but the bill numbers 
+	       need to be in the first column and the balance needs to be in the 
+               second column.
+   -The file needs the column names in the first row. The script
+         throws out that first row. So as to not lose any data,
+         please ensure the first row contains no bill numbers or balances.
+
+In the second text box you can browse to the folder you would
+    like the output file placed in. 
+
+In the third text box you must find where you downloaded chromedriver and select 
+   it. If it is the wrong file it will tell you now. If it is the wrong version of
+   chromedriver it will tell you after choosing a name for your csv.
+
+Hit OK. After hitting OK you will be asked what you'd like to name the file. 
+   -The fiiename must end with .csv
+
+The script will then open a chrome browser and get to work! You can 
+do other things while the program is running so long as the browser window stays 
+open. However, I cannot guarentee good performance. 
+
+Likewise, you can split the list in two and run two or more at a time and this 
+works fine. But I cannot guarentee good performance.
+
+==================================================================================
+				                        Problems
+==================================================================================
+The main problem you will face is that Chrome requires the use of an application 
+called "Chrome Driver" to automate its browser. Chrome Driver is updated alongside
+the browser. And thus if you update your chrome browser, the chrome driver must be 
+updated too. 
+
+To fix, check your version of chrome and then go to: 
+	https://sites.google.com/a/chromium.org/chromedriver/downloads
+and dowload the matching chrome driver win32.zip file. 
+
+Once downloaded, unzip the file and navigate to the program folder in a 
+seperate window (The folder these instructions are in). 
+
+The unzipped chromedriver folder will only contain an application called
+"chromedriver" copy this and paste it into the program folder, replacing the 
+chromedriver that is already there. 
+
+Run the program and test it. 
+
+If problems persist feel free to email jacobcraiglow1@gmail.com for support. 
